@@ -44,7 +44,10 @@ public class EstudiantePresencial extends Estudiante{
     
     @Override
     public String toString(){
-        return nombresEstudiante;
+        String cadena = String.format("Nombre : %s\n"
+                + "Costo Matricula : %.2f\n",
+                nombresEstudiante,matriculaPresencial);
+        return cadena;
     }
-    
+    // se utiliza los atributos de la super clase por los estamos heredando
 }
